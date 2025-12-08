@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.jpg");
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.container {
+    max-width: 850px;
+    margin: 100px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.secondary_title {
+	text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 16.5px;
+    line-height: 1.5;
+}
+
+.info-text {
+	text-align: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 220px;
+    background: #dfe6f1;
+    border-radius: 10px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6b7a99;
+    font-size: 18px;
+}
+
+.btn-start,
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+	color: white;
+	background: #2b6cb0;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.btn-start {
+    background: #2b6cb0;
+    color: white;
+}
+
+.btn-start:hover {
+    background: #1e5085;
+}
+
+.btn-primary:hover {
+    background: #1e5085;
+}
+
+.btn-classify {
+	background: #2b6cb0;
+    color: white;
+	display: inline-block;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 8px;
+	font-size: 17px;
+	border-style: none;
+	
+}
+
+.btn-classify:hover {
+    background: #1e5085;
+}
+
+.btn-classify:hover:not([disabled]) {
+    background-color: #1e5085;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+	text-align: center;
+}
+
+.button-group {
+	text-align: center;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #2b6cb0;
+    font-size: 18px;
+}
+
+.btn-submit[disabled] {
+    background-color: #cccccc !important;
+    color: #666 !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+.btn-submit {
+    background-color: #0066ff;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover:not([disabled]) {
+    background-color: #0052cc;
+}
+
+
+.box {
+    background: #eef3fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="file"] {
+    width: 97%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfc7d9;
+}
+
+.error-field {
+    border: 2px solid #d9534f !important;
+    background-color: #ffeaea;
+}
+
+.warning {
+    color: #b30000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+.btn-active {
+    background-color: #2b6cb0 !important;
+    cursor: pointer !important;
+}
+
+.btn-active:hover {
+    background: #1e5085 !important;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #c9d3e1;
+    padding: 12px;
+}
+
+.result-buttons {
+
+	text-align: center;
+}
+
+.char-counter {
+    font-size: 12px;
+    color: #555;
+    margin-top: 4px;
+}
+
