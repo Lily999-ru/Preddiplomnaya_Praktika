@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<!-- Заголовок веб-страницы -->
+    <title>Интеллектуальный сервис классификации</title>
+
+    <!-- Подключение стилей CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<! --- Для работы локально (СТИЛИ ПОМЕСТИТЬ ПОТОМ ОБРАТНО В STATIC--- >
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+<body>
+<!-- Подключение скриптов JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<!-- Главный контейнер -->
+<div class="container">
+	<!-- Заголовок -->
+    <h1 class="main-title">
+        Интеллектуальный сервис классификации медицинских новостных публикаций
+    </h1>
+	<!-- Текст - Краткое ознакомление с сервисом для пользователей -->
+    <p class="description">
+        Сервис автоматически классифицирует статьи по трем категориям:<br>
+		"Гипотезы и открытия", "Здравоохранение и экспертные мнения" и "Общественное здоровье".<br>
+        Выберите один из методов загрузки данных:
+    </p>
+	<!-- Иллюстрация к применению -->
+    <div class="image-placeholder"><img src="../static/img_01.jpg" alt="Инструкция по использованию сервиса." width="100%;">
+    </div>
+	<!-- Кнопки -->
+    <div class="button-group">
+        <a href="/csvupload" class="btn-start" style="margin-right: 15px;">Загрузить CSV-файл</a>
+        <a href="/textinput" class="btn-start">Ввести текст вручную</a>
+    </div>
+
+</div>
+
+</body>
+</html>
